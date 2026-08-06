@@ -28,6 +28,6 @@ jobs:
           server: ${{ secrets.HOSTINGER_FTP_SERVER }}
           username: ${{ secrets.HOSTINGER_FTP_USERNAME }}
           password: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
-          local-dir: ./dist/
-          server-dir: ./
-          dangerous-clean-slate: true   # Yeh line purani desync memory ko mita kar fresh copy force push karegi
+          local-dir: dist/             # Explicit build folder trajectory
+          server-dir: ./               # Direct deployment injection to root
+          dangerous-clean-slate: true  # Purane saare sync logs aur tracking ko cloud par wipe out karega
