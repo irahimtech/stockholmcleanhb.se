@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/',
   plugins: [react(), tailwindcss()],
   build: {
     // Isko 1000 karne se 500kB wali warning permanently khatam ho jayegi
