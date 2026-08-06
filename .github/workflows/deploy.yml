@@ -30,3 +30,4 @@ jobs:
           password: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
           local-dir: ./dist/
           server-dir: ./
+          dangerous-clean-slate: true   # Yeh line purani desync memory ko mita kar fresh copy force push karegi
